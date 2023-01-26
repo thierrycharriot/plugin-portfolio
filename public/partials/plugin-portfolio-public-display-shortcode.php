@@ -23,7 +23,13 @@
 				// https://developer.wordpress.org/reference/functions/wp_get_current_user/
 				// wp_get_current_user()
 				// Retrieve the current user object.
-				$user_infos = wp_get_current_user(); 
+				//$user_infos = wp_get_current_user(); 
+				//var_dump($user_infos)
+
+				// https://developer.wordpress.org/reference/functions/get_userdata/
+				// get_userdata( int $user_id ): WP_User|false
+				// Retrieves user info by user ID.
+				$user_infos = get_userdata(1); 
 				//var_dump($user_infos)
 			?>
 			</h1>
